@@ -17,50 +17,6 @@
 					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="GEN05">
-				<Option output="C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/GEN05.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/."/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/Makefile&quot;  VERBOSE=1 GEN05"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="GEN05/fast">
-				<Option output="C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/GEN05.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/."/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/Makefile&quot;  VERBOSE=1 GEN05/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="Experimental">
 				<Option working_dir="C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug"/>
 				<Option type="4"/>
@@ -91,8 +47,8 @@
 					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="example">
-				<Option output="C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/example.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="GEN05">
+				<Option output="C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/GEN05.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -111,14 +67,14 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/Makefile&quot;  VERBOSE=1 example"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/Makefile&quot;  VERBOSE=1 GEN05"/>
 					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="example/fast">
-				<Option output="C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/example.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="GEN05/fast">
+				<Option output="C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/GEN05.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -137,7 +93,7 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/Makefile&quot;  VERBOSE=1 example/fast"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/Makefile&quot;  VERBOSE=1 GEN05/fast"/>
 					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -446,7 +402,6 @@
 		</Unit>
 		<Unit filename="C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/tests.cpp">
 			<Option target="GEN05"/>
-			<Option target="example"/>
 		</Unit>
 		<Unit filename="C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

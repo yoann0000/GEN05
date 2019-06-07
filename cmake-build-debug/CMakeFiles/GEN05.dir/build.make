@@ -127,6 +127,10 @@ GEN05.exe: CMakeFiles/GEN05.dir/main.cpp.obj
 GEN05.exe: CMakeFiles/GEN05.dir/Movie.cpp.obj
 GEN05.exe: CMakeFiles/GEN05.dir/tests.cpp.obj
 GEN05.exe: CMakeFiles/GEN05.dir/build.make
+GEN05.exe: lib/libgtestd.a
+GEN05.exe: lib/libgmock_maind.a
+GEN05.exe: lib/libgmockd.a
+GEN05.exe: lib/libgtestd.a
 GEN05.exe: CMakeFiles/GEN05.dir/linklibs.rsp
 GEN05.exe: CMakeFiles/GEN05.dir/objects1.rsp
 GEN05.exe: CMakeFiles/GEN05.dir/link.txt
