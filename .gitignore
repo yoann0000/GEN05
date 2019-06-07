@@ -63,3 +63,4 @@ out/
 
 # Others
 *.gdb*
+cmake-build-debug
