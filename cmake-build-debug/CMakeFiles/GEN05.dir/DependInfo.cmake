@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/Customer.cpp" "C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/CMakeFiles/GEN05.dir/Customer.cpp.obj"
   "C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/Movie.cpp" "C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/CMakeFiles/GEN05.dir/Movie.cpp.obj"
   "C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/main.cpp" "C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/CMakeFiles/GEN05.dir/main.cpp.obj"
+  "C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/tests.cpp" "C:/Users/Yoann Rohrbasser/Documents/GitHub/GEN05/cmake-build-debug/CMakeFiles/GEN05.dir/tests.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
