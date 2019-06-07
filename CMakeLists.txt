@@ -5,15 +5,6 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
 
-add_executable(GEN05
-        Customer.cpp
-        Customer.h
-        main.cpp
-        Movie.cpp
-        Movie.h
-        Rental.h
-        tests.cpp)
-
 include(CTest)
 
 if (CMAKE_VERSION VERSION_LESS 3.2)
@@ -45,6 +36,14 @@ if (CMAKE_VERSION VERSION_LESS 2.8.11)
 endif()
 
 # Trivial example using gtest and gmock
-add_executable(example tests.cpp)
-target_link_libraries(example gtest gmock_main)
+add_executable(GEN05
+        Customer.cpp
+        Customer.h
+        main.cpp
+        Movie.cpp
+        Movie.h
+        Rental.h
+        tests.cpp)
+
+target_link_libraries(GEN05 gtest gmock_main)
 add_test(NAME example_test COMMAND example)
