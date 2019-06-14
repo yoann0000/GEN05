@@ -7,25 +7,18 @@
 
 class Rental {
 public:
-    Rental( Movie  movie, int daysRented );
+    Rental( Movie  movie, int daysRented ): _movie(std::move( movie )), _daysRented( daysRented ) {}
 
-    int getDaysRented() const;
-    const Movie& getMovie() const;
+    int getDaysRented() const {
+        return _daysRented;
+    }
+    const Movie& getMovie() const {
+        return _movie;
+    }
 
 private:
     Movie _movie;
     int _daysRented;
 };
-
-inline Rental::
-Rental( Movie  movie, int daysRented )
-        : _movie(std::move( movie ))
-        , _daysRented( daysRented ) {}
-
-inline int Rental::
-getDaysRented() const { return _daysRented; }
-
-inline const Movie& Rental::
-getMovie() const { return _movie; }
 
 #endif // RENTAL_H
