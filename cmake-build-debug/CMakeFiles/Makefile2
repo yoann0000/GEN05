@@ -963,12 +963,10 @@ clean: CMakeFiles/ContinuousMemCheck.dir/clean
 # Target rules for target CMakeFiles/GEN05.dir
 
 # All Build rule for target.
-CMakeFiles/GEN05.dir/all: googletest-build/googlemock/CMakeFiles/gmock.dir/all
-CMakeFiles/GEN05.dir/all: googletest-build/googletest/CMakeFiles/gtest.dir/all
-CMakeFiles/GEN05.dir/all: googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
+CMakeFiles/GEN05.dir/all:
 	$(MAKE) -f CMakeFiles\GEN05.dir\build.make CMakeFiles/GEN05.dir/depend
 	$(MAKE) -f CMakeFiles\GEN05.dir\build.make CMakeFiles/GEN05.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Yoann Rohrbasser\Documents\GitHub\GEN05\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4,5 "Built target GEN05"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Yoann Rohrbasser\Documents\GitHub\GEN05\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4 "Built target GEN05"
 .PHONY : CMakeFiles/GEN05.dir/all
 
 # Include target in all.
@@ -978,7 +976,7 @@ all: CMakeFiles/GEN05.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GEN05.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Yoann Rohrbasser\Documents\GitHub\GEN05\cmake-build-debug\CMakeFiles" 11
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Yoann Rohrbasser\Documents\GitHub\GEN05\cmake-build-debug\CMakeFiles" 4
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/GEN05.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Yoann Rohrbasser\Documents\GitHub\GEN05\cmake-build-debug\CMakeFiles" 0
 .PHONY : CMakeFiles/GEN05.dir/rule
@@ -995,6 +993,45 @@ CMakeFiles/GEN05.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/GEN05.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/GEN05Test.dir
+
+# All Build rule for target.
+CMakeFiles/GEN05Test.dir/all: googletest-build/googlemock/CMakeFiles/gmock.dir/all
+CMakeFiles/GEN05Test.dir/all: googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
+CMakeFiles/GEN05Test.dir/all: googletest-build/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f CMakeFiles\GEN05Test.dir\build.make CMakeFiles/GEN05Test.dir/depend
+	$(MAKE) -f CMakeFiles\GEN05Test.dir\build.make CMakeFiles/GEN05Test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Yoann Rohrbasser\Documents\GitHub\GEN05\cmake-build-debug\CMakeFiles" --progress-num=5,6,7,8,9 "Built target GEN05Test"
+.PHONY : CMakeFiles/GEN05Test.dir/all
+
+# Include target in all.
+all: CMakeFiles/GEN05Test.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/GEN05Test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Yoann Rohrbasser\Documents\GitHub\GEN05\cmake-build-debug\CMakeFiles" 11
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/GEN05Test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Yoann Rohrbasser\Documents\GitHub\GEN05\cmake-build-debug\CMakeFiles" 0
+.PHONY : CMakeFiles/GEN05Test.dir/rule
+
+# Convenience name for target.
+GEN05Test: CMakeFiles/GEN05Test.dir/rule
+
+.PHONY : GEN05Test
+
+# clean rule for target.
+CMakeFiles/GEN05Test.dir/clean:
+	$(MAKE) -f CMakeFiles\GEN05Test.dir\build.make CMakeFiles/GEN05Test.dir/clean
+.PHONY : CMakeFiles/GEN05Test.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/GEN05Test.dir/clean
 
 .PHONY : clean
 
@@ -1046,7 +1083,7 @@ googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: googletest-build/goog
 googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Yoann Rohrbasser\Documents\GitHub\GEN05\cmake-build-debug\CMakeFiles" --progress-num=8,9 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Yoann Rohrbasser\Documents\GitHub\GEN05\cmake-build-debug\CMakeFiles" --progress-num=12,13 "Built target gmock_main"
 .PHONY : googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Include target in all.
@@ -1083,7 +1120,7 @@ clean: googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean
 googletest-build/googlemock/CMakeFiles/gmock.dir/all: googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f googletest-build\googlemock\CMakeFiles\gmock.dir\build.make googletest-build/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f googletest-build\googlemock\CMakeFiles\gmock.dir\build.make googletest-build/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Yoann Rohrbasser\Documents\GitHub\GEN05\cmake-build-debug\CMakeFiles" --progress-num=6,7 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Yoann Rohrbasser\Documents\GitHub\GEN05\cmake-build-debug\CMakeFiles" --progress-num=10,11 "Built target gmock"
 .PHONY : googletest-build/googlemock/CMakeFiles/gmock.dir/all
 
 # Include target in all.
@@ -1140,7 +1177,7 @@ googletest-build/googletest/preinstall:
 googletest-build/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f googletest-build\googletest\CMakeFiles\gtest.dir\build.make googletest-build/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f googletest-build\googletest\CMakeFiles\gtest.dir\build.make googletest-build/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Yoann Rohrbasser\Documents\GitHub\GEN05\cmake-build-debug\CMakeFiles" --progress-num=10,11 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Yoann Rohrbasser\Documents\GitHub\GEN05\cmake-build-debug\CMakeFiles" --progress-num=14,15 "Built target gtest"
 .PHONY : googletest-build/googletest/CMakeFiles/gtest.dir/all
 
 # Include target in all.
@@ -1177,7 +1214,7 @@ clean: googletest-build/googletest/CMakeFiles/gtest.dir/clean
 googletest-build/googletest/CMakeFiles/gtest_main.dir/all: googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make googletest-build/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Yoann Rohrbasser\Documents\GitHub\GEN05\cmake-build-debug\CMakeFiles" --progress-num=12,13 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Yoann Rohrbasser\Documents\GitHub\GEN05\cmake-build-debug\CMakeFiles" --progress-num=16,17 "Built target gtest_main"
 .PHONY : googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 
 # Include target in all.
