@@ -1,3 +1,5 @@
+#include <utility>
+
 // Movie.h
 #ifndef MOVIE_H
 #define MOVIE_H
@@ -9,7 +11,7 @@ public:
     static const int REGULAR     = 0;
     static const int NEW_RELEASE = 1;
 
-    Movie( const std::string& title, int priceCode = REGULAR );
+    Movie( std::string  title, int priceCode = REGULAR );
 
     int getPriceCode() const;
     void setPriceCode( int arg );
@@ -21,18 +23,24 @@ private:
 };
 
 inline Movie::
-Movie( const std::string& title, int priceCode )
-        : _title( title )
+Movie( std::string  title, int priceCode )
+        : _title(std::move( title ))
         , _priceCode( priceCode )
 {}
 
 inline int Movie::
-getPriceCode() const { return _priceCode; }
+getPriceCode() const {
+    return _priceCode;
+}
 
 inline void Movie::
-setPriceCode( int arg ) { _priceCode = arg; }
+setPriceCode( int arg ) {
+    _priceCode = arg;
+}
 
 inline std::string Movie::
-getTitle() const { return _title; }
+getTitle() const {
+    return _title;
+}
 
 #endif // MOVIE_H
