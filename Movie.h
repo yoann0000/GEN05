@@ -8,14 +8,15 @@
 
 class Movie {
 public:
+    virtual ~Movie() = default;
     static const int CHILDRENS   = 2;
     static const int REGULAR     = 0;
     static const int NEW_RELEASE = 1;
 
-    explicit Movie( std::string  title, int priceCode = REGULAR ): _title(std::move( title )), _priceCode( priceCode )
-    {}
+    explicit Movie( std::string  title, int priceCode = REGULAR ): _title(std::move( title )), _priceCode( priceCode ){}
+    Movie();
 
-    int getPriceCode() const {
+    virtual int getPriceCode() const {
         return _priceCode;
     }
 
@@ -23,7 +24,7 @@ public:
         _priceCode = arg;
     }
 
-    std::string getTitle() const {
+    virtual std::string getTitle() const {
         return _title;
     }
 
