@@ -39,15 +39,12 @@ add_executable(GEN05
         Customer.cpp
         Customer.h
         main.cpp
-        Movie.cpp
         Movie.h
         Rental.h)
 
 add_executable(GEN05Test
         Customer.cpp
         Customer.h
-        main.cpp
-        Movie.cpp
         Movie.h
         Rental.h
         tests.cpp)
