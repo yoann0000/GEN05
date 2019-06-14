@@ -22,7 +22,7 @@ private:
 };
 
 inline Customer::
-Customer() {}
+Customer() = default;
 
 inline Customer::
 Customer( std::string  name )
