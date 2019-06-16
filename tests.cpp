@@ -27,6 +27,17 @@ TEST(movieTests, priceNameTest) {
     ASSERT_EQ("Karate Kid", kk.getTitle());
 }
 
+TEST(customerTests, nameRentalTest)
+{
+    Customer c = Customer("Georges");
+    Movie kk = Movie("Karate Kid");
+    Rental r = Rental(kk, 3);
+    c.addRental(r);
+    ASSERT_EQ("Georges", c.getName());
+    ASSERT_EQ("Karate Kid", r.getMovie().getTitle());
+    ASSERT_EQ(3, r.getDaysRented());
+}
+
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
