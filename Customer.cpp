@@ -49,14 +49,14 @@ string Customer::statement()
     return result.str();
 }
 
-string Customer::printFooter(int totalAmount, int frequentRenterPoints)
+string Customer::printFooter(double totalAmount, int frequentRenterPoints)
 {
-    string s = "";
+    string s;
     s.append("Amount owed is ");
-    s.append(totalAmount);
+    s.append(to_string(totalAmount));
     s.append("\n");
     s.append("You earned ");
-    s.append(frequentRenterPoints);
+    s.append(to_string(frequentRenterPoints));
     s.append(" frequent renter points");
 
     return s;

@@ -15,7 +15,7 @@ public:
     void addRental( const Rental& arg );
     std::string getName() const;
     std::string statement();
-    std::string printFooter(int totalAmount, int frequentRenterPoints);
+    static std::string printFooter(double totalAmount, int frequentRenterPoints);
 
 private:
     std::string _name;
