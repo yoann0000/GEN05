@@ -8,6 +8,12 @@
 #include "Customer.h"
 #include "Movie.h"
 
+class MockMovie : public Movie {
+public:
+    MOCK_CONST_METHOD0(getPriceCode, int());
+    MOCK_CONST_METHOD0(getTitle, std::string());
+};
+
 TEST(statementTests, statementTest1) {
     Customer customer("Olivier");
     customer.addRental( Rental( Movie("Karate Kid"), 7));
@@ -27,8 +33,7 @@ TEST(movieTests, priceNameTest) {
     ASSERT_EQ("Karate Kid", kk.getTitle());
 }
 
-TEST(customerTests, nameRentalTest)
-{
+TEST(customerTests, nameRentalTest) {
     Customer c = Customer("Georges");
     Movie kk = Movie("Karate Kid");
     Rental r = Rental(kk, 3);
