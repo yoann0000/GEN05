@@ -34,13 +34,14 @@ TEST(statementTests, statementTest1) {
 }
 
 TEST(movieTests, priceNameTest) {
-    Movie kk = Movie("Karate Kid");
-    Movie ae = Movie( "Avengers: Endgame", new NewRelease );
-    Movie jw = Movie( "John Wick 3", new PriceCode(4));
-    ASSERT_EQ(0, kk.getPriceCode()->getCode());
-    ASSERT_EQ(1, ae.getPriceCode()->getCode());
-    ASSERT_EQ(4, jw.getPriceCode()->getCode());
-    ASSERT_EQ("Karate Kid", kk.getTitle());
+    MockPriceCode pc;
+    EXPECT_CALL(pc, getCode()).WillRepeatedly(Return(0));
+    EXPECT_CALL(pc, calculateAmmount(5)).WillRepeatedly(Return(5));
+    MockMovie movie;
+    EXPECT_CALL(movie, getPriceCode()).WillRepeatedly(Return(&pc));
+    EXPECT_CALL(movie, getTitle()).WillRepeatedly(Return("mock movie"));
+
+    ASSERT_EQ("Karate Kid", movie.getTitle());
 }
 
 TEST(customerTests, nameRentalTest) {

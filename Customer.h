@@ -9,11 +9,11 @@
 
 class Customer {
 public:
-    Customer();
-    explicit Customer( std::string  name );
+    Customer() = default;
+    explicit Customer( std::string  name ) : _name(std::move( name )) {}
 
-    void addRental( const Rental& arg );
-    std::string getName() const;
+    void addRental( const Rental& arg ){ _rentals.push_back( arg ); }
+    std::string getName() const { return _name; }
     std::string statement();
 
 private:
@@ -22,18 +22,5 @@ private:
     std::string _name;
     std::vector< Rental > _rentals;
 };
-
-inline Customer::
-Customer() = default;
-
-inline Customer::
-Customer( std::string  name )
-        : _name(std::move( name )) {}
-
-inline void Customer::
-addRental( const Rental& arg ) { _rentals.push_back( arg ); }
-
-inline std::string Customer::
-getName() const { return _name; }
 
 #endif // CUSTOMER_H
