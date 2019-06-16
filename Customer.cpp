@@ -45,8 +45,19 @@ string Customer::statement()
         totalAmount += thisAmount;
     }
     // add footer lines
-    result << "Amount owed is " << totalAmount << "\n";
-    result << "You earned " << frequentRenterPoints
-           << " frequent renter points";
+    result << printFooter(totalAmount, frequentRenterPoints);
     return result.str();
+}
+
+string Customer::printFooter(int totalAmount, int frequentRenterPoints)
+{
+    string s = "";
+    s.append("Amount owed is ");
+    s.append(totalAmount);
+    s.append("\n");
+    s.append("You earned ");
+    s.append(frequentRenterPoints);
+    s.append(" frequent renter points");
+
+    return s;
 }
