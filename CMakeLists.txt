@@ -40,14 +40,14 @@ add_executable(GEN05
         Customer.h
         main.cpp
         Movie.h
-        Rental.h)
+        Rental.h PriceCode.h)
 
 add_executable(GEN05Test
         Customer.cpp
         Customer.h
         Movie.h
         Rental.h
-        tests.cpp)
+        tests.cpp PriceCode.h)
 
 target_link_libraries(GEN05Test gtest gmock_main)
 add_test(NAME example_test COMMAND example)

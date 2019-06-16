@@ -15,9 +15,10 @@ public:
     void addRental( const Rental& arg );
     std::string getName() const;
     std::string statement();
-    static std::string printFooter(double totalAmount, int frequentRenterPoints);
 
 private:
+    static std::string printFooter(double totalAmount, int frequentRenterPoints);
+
     std::string _name;
     std::vector< Rental > _rentals;
 };

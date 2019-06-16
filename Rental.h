@@ -7,7 +7,7 @@
 
 class Rental {
 public:
-    Rental( Movie  movie, int daysRented ): _movie(std::move( movie )), _daysRented( daysRented ) {}
+    Rental( const Movie& movie, int daysRented ): _movie(movie), _daysRented( daysRented ) {}
 
     int getDaysRented() const {
         return _daysRented;

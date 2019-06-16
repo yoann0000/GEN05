@@ -5,22 +5,21 @@
 #define MOVIE_H
 
 #include <string>
+#include "PriceCode.h"
 
 class Movie {
 public:
     virtual ~Movie() = default;
-    static const int CHILDRENS   = 2;
-    static const int REGULAR     = 0;
-    static const int NEW_RELEASE = 1;
 
-    explicit Movie( std::string  title, int priceCode = REGULAR ): _title(std::move( title )), _priceCode( priceCode ){}
+    explicit Movie( std::string  title, PriceCode* priceCode): _title(std::move( title )), _priceCode( priceCode ){}
+    explicit Movie( std::string  title): _title(std::move( title )), _priceCode(new Regular){}
     Movie();
 
-    virtual int getPriceCode() const {
+    virtual PriceCode* getPriceCode() const {
         return _priceCode;
     }
 
-    void setPriceCode( int arg ) {
+    void setPriceCode( PriceCode* arg ) {
         _priceCode = arg;
     }
 
@@ -30,7 +29,7 @@ public:
 
 private:
     std::string _title;
-    int _priceCode;
+    PriceCode* _priceCode;
 };
 
 #endif // MOVIE_H
